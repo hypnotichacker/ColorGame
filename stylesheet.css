@@ -1,0 +1,75 @@
+body {
+background-color: #939393;
+margin: 0; /*Adding margin 0 gets rid of space around h1 block and other areas so that black space doesn't surround divs at various places on the page (which also looks ugly)    */
+font-family: "Montserrat";
+}
+
+.square {
+width: 30%;
+padding-bottom: 30%;
+background-color: yellow;
+float: left;
+margin: 1.66%;
+border-radius: 15%;
+transition: background 0.5s;
+-webkit-transition: background 0.5s;
+-moz-transition: background 0.5s;
+/*webkit and moz transitions are to make sure this css exploit works on safari and mozilla, as the css transition exploit is not built into these browsers.    */
+}
+
+.container {
+max-width: 500px;
+margin: 20px auto;
+}
+
+h1 {
+text-align: center;
+background-color: steelblue;
+margin: 0; /*adding margin 0 gets rid of space around h1 block */
+font-weight: normal;
+text-transform: uppercase;
+line-height: 1.1;
+padding: 20px 0;
+}
+
+#stripe {
+    background: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+.selected {
+    color: white;
+    background-color: steelblue;
+}
+
+#colorDisplay {
+    font-size: 200%;
+}
+
+button {
+    border: none;
+    background: none; /*gets rid of background color on button */
+    text-transform: uppercase;
+    height: 100%; /*Button font takes up entire div stripe as opposed to just part of it on the top. Basically positions it evenly on the div    */
+    font-weight: 700;
+    color: steelblue;
+    font-size: inherit;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+/*webkit and moz transitions are to make sure this css exploit works on safari and mozilla, as the css transition exploit is not built into these browsers.    */
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background-color: steelblue;
+}
+
+#message {
+    display: inline-block;
+    width: 10%; /*Gives span between new colors and hard/easy a width of 10% of the page. Giving space between elements */
+}
